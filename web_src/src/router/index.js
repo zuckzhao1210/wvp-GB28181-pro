@@ -11,6 +11,7 @@ import streamProxyList from '../components/StreamProxyList.vue'
 import map from '../components/map.vue'
 import login from '../components/Login.vue'
 import parentPlatformList from '../components/ParentPlatformList.vue'
+import childJttPlatformList from '../components/childJttPlatformList.vue'
 import cloudRecord from '../components/CloudRecord.vue'
 import cloudRecordDetail from '../components/CloudRecordDetail.vue'
 import mediaServerManger from '../components/MediaServerManger.vue'
@@ -75,6 +76,11 @@ export default new VueRouter({
           path: '/parentPlatformList/:count/:page',
           name: 'parentPlatformList',
           component: parentPlatformList,
+        },
+        {
+          path: '/childJttPlatformList/:count/:page',
+          name: 'childJttPlatformList',
+          component: childJttPlatformList,
         },
         {
           path: '/map/:deviceId/:parentChannelId/:count/:page',
